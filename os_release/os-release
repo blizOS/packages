@@ -1,0 +1,12 @@
+NAME="blizOS"
+VERSION="rolling"
+PRETTY_NAME="blizOS"
+VERSION_ID="rolling"
+ID=blizos
+ID_LIKE=arch
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://novos.novusy.cf/"
+DOCUMENTATION_URL="https://novos.novusy.cf/"
+SUPPORT_URL="https://novos.novusy.cf/"
+BUG_REPORT_URL="https://novos.novusy.cf/"
+LOGO=novos

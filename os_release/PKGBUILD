@@ -1,0 +1,17 @@
+# Maintainer: Novus <novusoh01@outlook.com>
+
+pkgname=os-release
+pkgver=20230321
+pkgrel=1
+pkgdesc="Build control"
+arch=('any')
+url="https://www.novos.cf/"
+license=('GPL')
+depends=('sh')
+makedepends=('git')
+source=('os-release')
+sha512sums=('SKIP')
+
+package() {
+	install -Dm644 "os-release" -t "$pkgdir/etc"
+}

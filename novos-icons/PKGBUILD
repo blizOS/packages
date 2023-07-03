@@ -1,0 +1,23 @@
+# Maintainer: Novus <novusoh01@outlook.com>
+
+pkgname=('blizos-icons' 'novos-icons')
+pkgver=20230322
+pkgrel=1
+pkgdesc='Icons used for blizOS.'
+arch=('any')
+url='https://github.com/blizOS/blizos-icons'
+license=('MIT')
+source=("$url/archive/$pkgver.tar.gz")
+sha512sums=('SKIP')
+
+package_blizos-icons() {
+cd "$srcdir/blizos-icons-$pkgver"
+install -Dm644 * -t "$pkgdir/usr/share/icons/"
+install -Dm644 "LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+package_novos-icons() {
+cd "$srcdir/blizos-icons-$pkgver"
+install -Dm644 * -t "$pkgdir/usr/share/icons/"
+install -Dm644 "LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
