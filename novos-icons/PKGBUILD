@@ -1,7 +1,7 @@
 # Maintainer: Novus <novusoh01@outlook.com>
 
 pkgname=('blizos-icons' 'novos-icons')
-pkgver=20230322
+pkgver=20230802
 pkgrel=1
 pkgdesc='Icons used for blizOS.'
 arch=('any')
