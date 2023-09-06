@@ -1,0 +1,38 @@
+From b6d4815b051d4048f00fa05a57959a5681a031b5 Mon Sep 17 00:00:00 2001
+From: Guillaume Benoit <guillaume@manjaro.org>
+Date: Thu, 17 Aug 2023 10:29:44 +0200
+Subject: [PATCH] fix #1379
+
+---
+ src/preferences_dialog.vala | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+diff --git a/src/preferences_dialog.vala b/src/preferences_dialog.vala
+index c8e2be53..e198aa81 100644
+--- a/src/preferences_dialog.vala
++++ b/src/preferences_dialog.vala
+@@ -118,15 +118,17 @@ namespace Pamac {
+ 			store.append (obj);
+ 			refresh_period_comborow.set_model (store);
+ 			var factory = new Gtk.SignalListItemFactory ();
+-			factory.setup.connect ((listitem) => {
++			factory.setup.connect ((object) => {
++				unowned Gtk.ListItem listitem = object as Gtk.ListItem;
+ 				var label = new Gtk.Label (null);
+ 				listitem.set_child (label);
+ 			});
+-			factory.bind.connect ((listitem) => {
++			factory.bind.connect ((object) => {
++				unowned Gtk.ListItem listitem = object as Gtk.ListItem;
+ 				unowned Gtk.Widget child = listitem.child;
+ 				unowned Gtk.Label label = child as Gtk.Label;
+-				unowned Object object = listitem.item;
+-				unowned Gtk.StringObject string_object = object as Gtk.StringObject;
++				unowned Object item_object = listitem.item;
++				unowned Gtk.StringObject string_object = item_object as Gtk.StringObject;
+ 				label.label = string_object.get_string ();
+ 			});
+ 			refresh_period_comborow.set_factory (factory);
+-- 
+GitLab
+

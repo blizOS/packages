@@ -1,0 +1,1616 @@
+# Translation of Pamac.
+# Copyright (C) 2013-2023 Manjaro Developers <manjaro-dev@manjaro.org>
+# This file is distributed under the same license as the Pamac package.
+# Guillaume Benoit <guillaume@manjaro.org>, 2013-2022.
+# 
+# Translators:
+# BALLOON a.k.a. Fu-sen., 2015
+# 🎈 BALLOON | FU-SEN, 2015
+# philm <philm@manjaro.org>, 2015
+# Takefumi Nagata, 2013-2018
+# UTUMI Hirosi <utuhiro78@yahoo.co.jp>, 2017-2022
+# David Blaszyk <david@sudomail.ne.jp>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: manjaro-pamac\n"
+"Report-Msgid-Bugs-To: guillaume@manjaro.org\n"
+"POT-Creation-Date: 2023-02-23 12:28+0100\n"
+"PO-Revision-Date: 2013-04-16 23:37+0000\n"
+"Last-Translator: UTUMI Hirosi <utuhiro78@yahoo.co.jp>, 2017-2022\n"
+"Language-Team: Japanese (http://www.transifex.com/manjarolinux/manjaro-pamac/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: data/polkit/org.manjaro.pamac.policy.in
+msgid "Install, update, or remove packages"
+msgstr "パッケージのインストール、アップデート、削除"
+
+#: data/polkit/org.manjaro.pamac.policy.in
+msgid "Authentication is required to install, update, or remove packages"
+msgstr "パッケージのインストール、アップデート、削除には認証が必要です"
+
+#: src/alpm_utils.vala src/database.vala
+msgid "Failed to initialize alpm library"
+msgstr "Alpmライブラリの初期化に失敗しました"
+
+#: src/alpm_utils.vala
+msgid "Synchronizing package databases"
+msgstr "パッケージのデータベースを同期しています"
+
+#: src/alpm_utils.vala
+msgid "Failed to synchronize databases"
+msgstr "データベースの同期に失敗しました"
+
+#: src/alpm_utils.vala
+msgid "Failed to init transaction"
+msgstr "トランザクションの初期化に失敗しました"
+
+#: src/alpm_utils.vala src/transaction.vala src/transaction-gtk.vala
+#: src/installer.vala
+msgid "Failed to prepare transaction"
+msgstr "トランザクションの準備に失敗しました"
+
+#: src/alpm_utils.vala src/transaction.vala src/installer.vala src/cli.vala
+#, c-format
+msgid "target not found: %s"
+msgstr "ターゲットが見つかりません: %s"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "package %s does not have a valid architecture"
+msgstr "パッケージ %s は有効なアーキテクチャではありません"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "unable to satisfy dependency '%1$s' required by %2$s"
+msgstr "'%2$s' に必要な依存関係 '%1$s' を満たすことができません"
+
+#: src/alpm_utils.vala src/transaction.vala src/transaction-gtk.vala
+#: src/cli.vala
+msgid "Warning"
+msgstr "警告"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "installing %1$s (%2$s) breaks dependency '%3$s' required by %4$s"
+msgstr "%1$s (%2$s) をインストールすると、%4$s に必要な依存関係 '%3$s' が壊れます"
+
+#: src/alpm_utils.vala src/cli.vala
+#, c-format
+msgid "Add %s to remove"
+msgstr "%s を削除に追加する"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "if possible, remove %s and retry"
+msgstr "可能であれば、%s を削除してリトライしてください"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "removing %1$s breaks dependency '%2$s' required by %3$s"
+msgstr "%1$s を削除すると、%3$s に必要な依存関係 '%2$s' が壊れます"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%1$s and %2$s are in conflict"
+msgstr "%1$s と %2$s が競合しています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%s needs to be removed but it is a locked package"
+msgstr "%s を削除する必要がありますが、ロックされています"
+
+#: src/alpm_utils.vala src/transaction.vala
+msgid "Failed to initialize AUR database"
+msgstr "AUR データベースの初期化に失敗しました"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "removing %s from target list"
+msgstr "ターゲットリストから %s を削除しています"
+
+#: src/alpm_utils.vala src/transaction-gtk.vala
+msgid "A restart is required for the changes to take effect"
+msgstr "変更を有効にするには再起動が必要です"
+
+#: src/alpm_utils.vala src/daemon.vala src/transaction.vala
+msgid "Transaction cancelled"
+msgstr "トランザクションがキャンセルされました"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%1$s exists in both %2$s and %3$s"
+msgstr "%1$s は %2$s と %3$s の両方に存在します"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%1$s: %2$s already exists in filesystem (owned by %3$s)"
+msgstr "%1$s: %2$s はすでにファイルシステムに存在します（%3$s が所有）"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%1$s: %2$s already exists in filesystem"
+msgstr "%1$s: %2$s はすでにファイルシステムに存在します"
+
+#: src/alpm_utils.vala
+msgid "if this file is not needed, remove it and retry"
+msgstr "このファイルが不要な場合は、削除してリトライしてください"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "It has been backed up to %s"
+msgstr "%s にバックアップされています"
+
+#: src/alpm_utils.vala
+msgid "Removing invalid files and retrying"
+msgstr "無効なファイルを削除してリトライしています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%s is invalid or corrupted"
+msgstr "%s は無効もしくは壊れています"
+
+#: src/alpm_utils.vala
+msgid "you can remove this file and retry"
+msgstr "このファイルを削除してリトライできます"
+
+#: src/alpm_utils.vala
+msgid "failed to retrieve some files"
+msgstr "一部のファイルを取得できませんでした"
+
+#: src/alpm_utils.vala
+msgid "Failed to commit transaction"
+msgstr "トランザクションのコミットに失敗しました"
+
+#: src/alpm_utils.vala
+msgid "Checking dependencies"
+msgstr "依存を確認しています"
+
+#: src/alpm_utils.vala
+msgid "Checking file conflicts"
+msgstr "競合を確認しています"
+
+#: src/alpm_utils.vala
+msgid "Resolving dependencies"
+msgstr "依存関係を解決しています"
+
+#: src/alpm_utils.vala
+msgid "Checking inter-conflicts"
+msgstr "内部の競合を確認しています"
+
+#: src/alpm_utils.vala src/snap_plugin.vala
+#, c-format
+msgid "Installing %s"
+msgstr "%s をインストールしています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Upgrading %s"
+msgstr "%s をアップグレードしています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Reinstalling %s"
+msgstr "%s を再インストールしています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Downgrading %s"
+msgstr "%s をダウングレードしています"
+
+#: src/alpm_utils.vala src/snap_plugin.vala
+#, c-format
+msgid "Removing %s"
+msgstr "%s を削除しています"
+
+#: src/alpm_utils.vala
+msgid "Checking integrity"
+msgstr "整合性を確認しています"
+
+#: src/alpm_utils.vala
+msgid "Loading packages files"
+msgstr "パッケージファイルをロードしています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Configuring %s"
+msgstr "%s を設定しています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Error while configuring %s"
+msgstr "%s の設定中にエラーが発生しました"
+
+#: src/alpm_utils.vala
+msgid "Checking available disk space"
+msgstr "使用可能なディスク容量を確認しています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%1$s optionally requires %2$s"
+msgstr "%1$s にはオプションで %2$s が必要です"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Database file for %s does not exist"
+msgstr "%s のデーターベースファイルが存在しません"
+
+#: src/alpm_utils.vala
+msgid "Checking keyring"
+msgstr "キーリングを確認しています"
+
+#: src/alpm_utils.vala
+msgid "Downloading required keys"
+msgstr "必要なキーをダウンロードしています"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%1$s installed as %2$s.pacnew"
+msgstr "%1$s は %2$s.pacnew としてインストールされました"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "%1$s installed as %2$s.pacsave"
+msgstr "%1$s は %2$s.pacsave としてインストールされました"
+
+#: src/alpm_utils.vala
+msgid "Running pre-transaction hooks"
+msgstr "トランザクション前のフックを実行しています"
+
+#: src/alpm_utils.vala
+msgid "Running post-transaction hooks"
+msgstr "トランザクション後のフックを実行しています"
+
+#: src/alpm_utils.vala
+msgid "Error while running hooks"
+msgstr "フックの実行中にエラーが発生しました"
+
+#: src/alpm_utils.vala src/snap_plugin.vala
+#, c-format
+msgid "About %lu second remaining"
+msgid_plural "About %lu seconds remaining"
+msgstr[0] "残り約 %lu 秒"
+
+#: src/alpm_utils.vala src/snap_plugin.vala
+#, c-format
+msgid "About %lu minute remaining"
+msgid_plural "About %lu minutes remaining"
+msgstr[0] "残り約 %lu 分"
+
+#: src/alpm_utils.vala src/transaction-cli.vala src/cli.vala
+msgid "Error"
+msgstr "エラー"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Refreshing %s"
+msgstr "%s をアップデートしています"
+
+#: src/alpm_utils.vala src/database.vala src/transaction-gtk.vala
+#: src/manager_window.vala src/cli.vala resources/preferences_dialog.ui
+msgid "AUR"
+msgstr "AUR"
+
+#: src/alpm_utils.vala src/snap_plugin.vala
+#, c-format
+msgid "Download of %s started"
+msgstr "%s のダウンロードを開始しました"
+
+#: src/alpm_utils.vala
+#, c-format
+msgid "Downloading %s"
+msgstr "%s をダウンロードしています"
+
+#: src/alpm_utils.vala src/snap_plugin.vala
+#, c-format
+msgid "Download of %s finished"
+msgstr "%s のダウンロードを完了しました"
+
+#: src/daemon.vala
+msgid "Authentication failed"
+msgstr "認証に失敗しました"
+
+#: src/daemon.vala
+msgid "Waiting for another package manager to quit"
+msgstr "他のパッケージマネージャが終了するのを待っています"
+
+#: src/daemon.vala
+msgid "Timeout expired"
+msgstr "タイムアウト期限切れ"
+
+#: src/transaction.vala
+msgid "Refreshing mirrors list"
+msgstr "ミラーリストをアップデートしています"
+
+#: src/transaction.vala src/cli.vala
+#, c-format
+msgid "Cloning %s build files"
+msgstr " %s のビルドファイルを複製しています"
+
+#: src/transaction.vala
+#, c-format
+msgid "Failed to clone %s build files"
+msgstr "%s ビルドファイルのクローンに失敗しました"
+
+#: src/transaction.vala
+#, c-format
+msgid "Generating %s information"
+msgstr "%s の情報を生成しています"
+
+#: src/transaction.vala
+#, c-format
+msgid "Failed to generate %s information"
+msgstr "%s の情報を生成できませんでした"
+
+#: src/transaction.vala
+#, c-format
+msgid "Checking %s dependencies"
+msgstr "%s の依存を確認しています"
+
+#: src/transaction.vala
+#, c-format
+msgid "Failed to check %s dependencies"
+msgstr "%s の依存関係を確認できませんでした"
+
+#: src/transaction.vala
+#, c-format
+msgid "key %s could not be imported"
+msgstr "鍵 %s をインポートできませんでした"
+
+#: src/transaction.vala src/manager_window.vala
+msgid "Transaction successfully finished"
+msgstr "トランザクションが成功しました"
+
+#: src/transaction.vala
+msgid "Preparing"
+msgstr "準備しています"
+
+#: src/transaction.vala src/snap_plugin.vala
+msgid "Yes"
+msgstr "はい"
+
+#: src/transaction.vala src/installer.vala src/cli.vala
+msgid "Nothing to do"
+msgstr "何もすることがありません"
+
+#: src/transaction.vala
+#, c-format
+msgid "%1$s: ignoring package upgrade (%2$s => %3$s)"
+msgstr "%1$s: パッケージのアップグレードを無視（%2$s => %3$s）"
+
+#: src/transaction.vala
+msgid "Failed to synchronize AUR database"
+msgstr "AUR データベースの同期に失敗しました"
+
+#: src/transaction.vala
+#, c-format
+msgid "Failed to build %s"
+msgstr "%s のビルドに失敗しました "
+
+#: src/transaction.vala
+#, c-format
+msgid "Building %s"
+msgstr "%s をビルドしています"
+
+#: src/transaction-gtk.vala src/transaction-cli.vala
+#, c-format
+msgid "Choose optional dependencies for %s"
+msgstr "%s のオプション依存を選択"
+
+#: src/transaction-gtk.vala src/transaction-cli.vala
+#, c-format
+msgid "Choose a provider for %s"
+msgstr "%s の提供元を選択"
+
+#: src/transaction-gtk.vala
+msgid "Import PGP key"
+msgstr "PGP鍵をインポート"
+
+#: src/transaction-gtk.vala
+msgid "Trust and Import"
+msgstr "信用とインポート"
+
+#: src/transaction-gtk.vala src/manager_window.vala
+#: src/preferences_dialog.vala resources/progress_dialog.ui
+#: resources/transaction_sum_dialog.ui resources/manager_window.ui
+#: resources/choose_pkgs_dialog.ui
+msgid "_Cancel"
+msgstr "キャンセル (_C)"
+
+#: src/transaction-gtk.vala src/transaction-cli.vala
+#, c-format
+msgid "The PGP key %1$s is needed to verify %2$s source files"
+msgstr "ソースファイル %2$s を検証するには PGP キー %1$s が必要です"
+
+#: src/transaction-gtk.vala src/transaction-cli.vala
+#, c-format
+msgid "Trust %s and import the PGP key"
+msgstr "%s を信用してPGP鍵をインポートしますか"
+
+#: src/transaction-gtk.vala src/manager_window.vala
+#: resources/preferences_dialog.ui
+msgid "Official Repositories"
+msgstr "公式リポジトリ"
+
+#: src/transaction-gtk.vala src/manager_window.vala
+#: resources/manager_window.ui
+msgid "Repositories"
+msgstr "リポジトリ"
+
+#: src/transaction-gtk.vala src/manager_window.vala
+#: resources/preferences_dialog.ui
+msgid "Flatpak"
+msgstr "Flatpak"
+
+#: src/transaction-gtk.vala src/manager_window.vala src/transaction-cli.vala
+#: src/cli.vala
+msgid "Depends On"
+msgstr "以下に依存"
+
+#: src/transaction-gtk.vala src/transaction-cli.vala
+msgid "Orphan Of"
+msgstr "以下から孤立している"
+
+#: src/transaction-gtk.vala src/manager_window.vala src/transaction-cli.vala
+#: src/cli.vala
+msgid "Conflicts With"
+msgstr "以下と競合する"
+
+#: src/transaction-gtk.vala src/manager_window.vala src/transaction-cli.vala
+#: src/cli.vala
+msgid "Required By"
+msgstr "以下に必要"
+
+#: src/transaction-gtk.vala src/manager_window.vala src/transaction-cli.vala
+#: src/cli.vala
+msgid "Replaces"
+msgstr "以下を置き換える"
+
+#: src/transaction-gtk.vala src/transaction-cli.vala
+msgid "Edit build files"
+msgstr "ビルドファイルの編集"
+
+#: src/transaction-gtk.vala src/manager_window.vala src/transaction-cli.vala
+msgid "Total download size"
+msgstr "ダウンロードサイズの合計"
+
+#: src/transaction-gtk.vala src/transaction-cli.vala
+#, c-format
+msgid "Edit %s build files"
+msgstr "%s ビルドファイルの編集"
+
+#: src/transaction-gtk.vala
+msgid "Save"
+msgstr "保存"
+
+#: src/transaction-gtk.vala resources/progress_dialog.ui
+#: resources/history_dialog.ui
+msgid "_Close"
+msgstr "閉じる (_C)"
+
+#: src/transaction-gtk.vala
+msgid "Restart"
+msgstr "再起動"
+
+#: src/transaction-gtk.vala src/manager_window.vala
+#: resources/manager_window.ui
+msgid "Install"
+msgstr "インストール"
+
+#: src/transaction-gtk.vala
+#, c-format
+msgid "The snap %s was published using classic confinement"
+msgstr "スナップ %s は従来の制限を使用して公開されました"
+
+#: src/transaction-gtk.vala
+#, c-format
+msgid "Install %s anyway"
+msgstr "とにかく %s をインストール"
+
+#: src/transaction-gtk.vala src/tray.vala
+msgid "Package Manager"
+msgstr "パッケージマネージャ"
+
+#: src/installer.vala src/cli.vala
+msgid "Install packages from repositories, path or url"
+msgstr "リポジトリからパッケージのインストール、パスまたはURL"
+
+#: src/installer.vala src/cli.vala
+msgid "Remove packages"
+msgstr "パッケージの削除"
+
+#: src/installer.vala src/cli.vala
+msgid "Build packages from AUR and install them with their dependencies"
+msgstr "AUR からパッケージをビルドし、依存パッケージとともにインストールする"
+
+#: src/installer.vala src/cli.vala
+msgid "package(s)"
+msgstr "パッケージ"
+
+#: src/tray.vala
+msgid "Updates Available"
+msgstr "利用可能なアップデート"
+
+#: src/tray.vala src/manager_window.vala src/cli.vala
+msgid "Your system is up to date"
+msgstr "お使いのシステムは最新です"
+
+#: src/tray.vala
+msgid "_Quit"
+msgstr "終了 (_Q)"
+
+#: src/tray.vala src/cli.vala
+#, c-format
+msgid "%u available update"
+msgid_plural "%u available updates"
+msgstr[0] "%u 個のアップデートがあります"
+
+#: src/tray.vala resources/progress_dialog.ui resources/manager_window.ui
+msgid "Details"
+msgstr "詳細"
+
+#: src/manager_window.vala
+msgid "No package found"
+msgstr "パッケージが見つかりません"
+
+#: src/manager_window.vala
+msgid "Checking for Updates"
+msgstr "アップデートがあるか確認しています"
+
+#: src/manager_window.vala resources/manager_window.ui
+msgid "Install Local Packages"
+msgstr "ローカルパッケージをインストール"
+
+#: src/manager_window.vala
+msgid "_Open"
+msgstr "開く (_O)"
+
+#: src/manager_window.vala
+msgid "Alpm Package"
+msgstr "Alpm パッケージ"
+
+#: src/manager_window.vala
+msgid "A Package Manager with Alpm, AUR, Flatpak and Snap support"
+msgstr "Alpm、AUR、Flatpak、Snap をサポートするパッケージマネージャー"
+
+#: src/manager_window.vala src/snap_plugin.vala
+#: resources/preferences_dialog.ui
+msgid "Snap"
+msgstr "Snap"
+
+#: src/manager_window.vala
+#, c-format
+msgid "%u pending operation"
+msgid_plural "%u pending operations"
+msgstr[0] "%u 個の操作を保留しています"
+
+#: src/manager_window.vala
+msgid "Pending"
+msgstr "保留"
+
+#: src/manager_window.vala
+msgid "All"
+msgstr "すべて"
+
+#: src/manager_window.vala
+msgid "Explicitly installed"
+msgstr "明示的にインストール"
+
+#: src/manager_window.vala
+msgid "Orphans"
+msgstr "孤立"
+
+#: src/manager_window.vala
+msgid "Foreign"
+msgstr "外部"
+
+#: src/manager_window.vala src/cli.vala resources/manager_window.ui
+msgid "Installed"
+msgstr "インストール済み"
+
+#: src/manager_window.vala
+msgid "Ignored"
+msgstr "無視"
+
+#: src/manager_window.vala src/cli.vala
+msgid "None"
+msgstr "なし"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Install Reason"
+msgstr "インストール理由"
+
+#: src/manager_window.vala
+msgid "Installed as a dependency for another package"
+msgstr "他のパッケージの依存としてインストール"
+
+#: src/manager_window.vala
+msgid "Mark as explicitly installed"
+msgstr "明示的なインストールとしてマーク"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Licenses"
+msgstr "ライセンス"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Unknown"
+msgstr "不明"
+
+#: src/manager_window.vala src/cli.vala resources/manager_window.ui
+msgid "Repository"
+msgstr "リポジトリ"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Package Base"
+msgstr "パッケージベース"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Maintainer"
+msgstr "メンテナ"
+
+#: src/manager_window.vala src/cli.vala
+msgid "First Submitted"
+msgstr "最初の投稿日"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Last Modified"
+msgstr "最終更新日"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Votes"
+msgstr "投票数"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Out of Date"
+msgstr "期限切れ"
+
+#: src/manager_window.vala src/cli.vala resources/manager_window.ui
+msgid "Groups"
+msgstr "グループ"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Packager"
+msgstr "パッケージ作成者"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Build Date"
+msgstr "ビルド日"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Install Date"
+msgstr "インストール日"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Validated By"
+msgstr "次で検証済み"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Backup files"
+msgstr "バックアップファイル"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Optional Dependencies"
+msgstr "オプション"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Optional For"
+msgstr "以下のオプション"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Provides"
+msgstr "提供"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Make Dependencies"
+msgstr "作成時の依存"
+
+#: src/manager_window.vala src/cli.vala
+msgid "Check Dependencies"
+msgstr "依存を確認"
+
+#: src/manager_window.vala
+msgid "Publisher"
+msgstr "発行元"
+
+#: src/manager_window.vala
+msgid "Confined in a Sandbox"
+msgstr "Sandboxに限定する"
+
+#: src/manager_window.vala
+msgid "Channels"
+msgstr "チャンネル"
+
+#: src/manager_window.vala
+msgid "OS Updates"
+msgstr "OSアップデート"
+
+#: src/manager_window.vala
+msgid "Includes performance, stability and security improvements"
+msgstr "パフォーマンス、安定性、セキュリティの改善が含まれています"
+
+#: src/manager_window.vala
+msgid "Featured"
+msgstr "おすすめ"
+
+#: src/manager_window.vala
+msgid "Photo & Video"
+msgstr "写真とビデオ"
+
+#: src/manager_window.vala
+msgid "Music & Audio"
+msgstr "音楽とオーディオ"
+
+#: src/manager_window.vala
+msgid "Productivity"
+msgstr "文書"
+
+#: src/manager_window.vala
+msgid "Communication & News"
+msgstr "通信とニュース"
+
+#: src/manager_window.vala
+msgid "Education & Science"
+msgstr "教育と科学"
+
+#: src/manager_window.vala
+msgid "Games"
+msgstr "ゲーム"
+
+#: src/manager_window.vala
+msgid "Utilities"
+msgstr "ユーティリティ"
+
+#: src/manager_window.vala
+msgid "Development"
+msgstr "開発"
+
+#: src/manager_window.vala resources/manager_window.ui
+#: resources/preferences_dialog.ui
+msgid "Updates"
+msgstr "アップデート"
+
+#: src/manager_window.vala
+msgid "Last refresh"
+msgstr "最終更新"
+
+#: src/preferences_dialog.vala
+msgid "every 3 hours"
+msgstr "3時間ごと"
+
+#: src/preferences_dialog.vala
+msgid "every 6 hours"
+msgstr "6時間ごと"
+
+#: src/preferences_dialog.vala
+msgid "every 12 hours"
+msgstr "12時間ごと"
+
+#: src/preferences_dialog.vala
+msgid "every day"
+msgstr "1日ごと"
+
+#: src/preferences_dialog.vala
+msgid "every week"
+msgstr "1週間ごと"
+
+#: src/preferences_dialog.vala
+msgid "1"
+msgstr "1"
+
+#: src/preferences_dialog.vala
+msgid "2"
+msgstr "2"
+
+#: src/preferences_dialog.vala
+msgid "4"
+msgstr "4"
+
+#: src/preferences_dialog.vala
+msgid "6"
+msgstr "6"
+
+#: src/preferences_dialog.vala
+msgid "8"
+msgstr "8"
+
+#: src/preferences_dialog.vala
+msgid "10"
+msgstr "10"
+
+#: src/preferences_dialog.vala
+msgid "Worldwide"
+msgstr "全世界"
+
+#: src/preferences_dialog.vala
+msgid "0"
+msgstr "0"
+
+#: src/preferences_dialog.vala
+msgid "3"
+msgstr "3"
+
+#: src/preferences_dialog.vala
+msgid "5"
+msgstr "5"
+
+#: src/preferences_dialog.vala src/cli.vala
+msgid "To delete"
+msgstr "以下を削除"
+
+#: src/preferences_dialog.vala src/cli.vala
+#, c-format
+msgid "%u file"
+msgid_plural "%u files"
+msgstr[0] "%u ファイル"
+
+#: src/preferences_dialog.vala
+msgid "Select Build Directory"
+msgstr "ビルドディレクトリを選択"
+
+#: src/preferences_dialog.vala
+msgid "_Choose"
+msgstr "選択(_C)"
+
+#: src/preferences_dialog.vala
+msgid "Choose Ignored Upgrades"
+msgstr "無視するアップグレードを選択"
+
+#: src/transaction-cli.vala src/cli.vala
+#, c-format
+msgid "Enter a selection (default=%s)"
+msgstr "選択を入力 (デフォルト=%s)"
+
+#: src/transaction-cli.vala
+msgid "none"
+msgstr "なし"
+
+#: src/transaction-cli.vala
+#, c-format
+msgid "Enter a number (default=%d)"
+msgstr "番号を入力（デフォルト 1%d）"
+
+#: src/transaction-cli.vala
+msgid "[y/N]"
+msgstr "[y/N]"
+
+#: src/transaction-cli.vala
+msgid "y"
+msgstr "y"
+
+#: src/transaction-cli.vala
+msgid "yes"
+msgstr "yes"
+
+#: src/transaction-cli.vala
+msgid "[e]"
+msgstr "[e]"
+
+#: src/transaction-cli.vala
+msgid "Apply transaction"
+msgstr "トランザクションを適用する"
+
+#: src/transaction-cli.vala
+msgid "[e/y/N]"
+msgstr "[e/y/N]"
+
+#: src/transaction-cli.vala
+msgid "e"
+msgstr "e"
+
+#: src/transaction-cli.vala
+msgid "To upgrade"
+msgstr "以下をアップグレード"
+
+#: src/transaction-cli.vala
+msgid "To reinstall"
+msgstr "以下を再インストール"
+
+#: src/transaction-cli.vala
+msgid "To install"
+msgstr "以下をインストール"
+
+#: src/transaction-cli.vala
+msgid "To build"
+msgstr "以下をビルド"
+
+#: src/transaction-cli.vala
+msgid "To downgrade"
+msgstr "以下をダウングレード"
+
+#: src/transaction-cli.vala
+msgid "To remove"
+msgstr "以下を削除"
+
+#: src/transaction-cli.vala
+msgid "Total installed size"
+msgstr "インストールしたパッケージのサイズの合計"
+
+#: src/transaction-cli.vala
+msgid "Total removed size"
+msgstr "削除したパッケージのサイズの合計"
+
+#: src/transaction-cli.vala
+#, c-format
+msgid "View %s build files diff"
+msgstr "%s ビルドファイルの差分を見る"
+
+#: src/cli.vala
+msgid "Building packages as dynamic user"
+msgstr "動的ユーザーとしてパッケージをビルドする"
+
+#: src/cli.vala
+#, c-format
+msgid "Setting build directory to %s"
+msgstr "ビルドディレクトリを %s に設定する"
+
+#: src/cli.vala
+msgid "No PKGBUILD file found in current directory"
+msgstr "カレントディレクトリにPKGBUILDファイルが存在しません"
+
+#: src/cli.vala
+msgid "Checking development packages updates as root"
+msgstr "root として開発用パッケージの更新を確認する"
+
+#: src/cli.vala
+msgid "Available actions"
+msgstr "利用可能なアクション"
+
+#: src/cli.vala
+msgid "action"
+msgstr "アクション"
+
+#: src/cli.vala
+msgid "options"
+msgstr "オプション"
+
+#: src/cli.vala
+msgid "Search for packages or files, multiple search terms can be specified"
+msgstr "パッケージやファイルの検索する際、複数の検索語の指定ができます"
+
+#: src/cli.vala
+msgid "file(s)"
+msgstr "ファイル"
+
+#: src/cli.vala
+msgid "only search for installed packages"
+msgstr "インストール済みパッケージのみを検索"
+
+#: src/cli.vala
+msgid "only search for packages in repositories"
+msgstr "リポジトリ内のパッケージのみを検索"
+
+#: src/cli.vala
+msgid "also search in AUR"
+msgstr "AUR も検索する"
+
+#: src/cli.vala
+msgid "do not search in AUR"
+msgstr "AUR を検索しない"
+
+#: src/cli.vala
+msgid ""
+"search for packages which own the given filenames (filenames can be partial)"
+msgstr "ファイル名（ファイル名は部分的でも可）によりパッケージを検索"
+
+#: src/cli.vala
+msgid "only print names"
+msgstr "名前を表示するのみ"
+
+#: src/cli.vala
+msgid "Display package details, multiple packages can be specified"
+msgstr "パッケージの詳細を表示する際、複数のパッケージを指定することができます。"
+
+#: src/cli.vala
+msgid "List packages, groups, repositories or files"
+msgstr "パッケージ、グループ、リポジトリまたはファイルのリスト"
+
+#: src/cli.vala
+msgid "group(s)"
+msgstr "グループ"
+
+#: src/cli.vala
+msgid "repo(s)"
+msgstr "リポジトリ"
+
+#: src/cli.vala
+msgid "list installed packages"
+msgstr "インストール済みパッケージのリスト"
+
+#: src/cli.vala
+msgid "list explicitly installed packages"
+msgstr "明示的にインストールされたパッケージのリスト"
+
+#: src/cli.vala
+msgid ""
+"list packages that were installed as dependencies but are no longer required"
+" by any installed package"
+msgstr "他のパッケージの依存パッケージとしてインストールされたものの、既に他のパッケージから必要とされていないパッケージのリスト"
+
+#: src/cli.vala
+msgid "list packages that were not found in the repositories"
+msgstr "リポジトリに存在しないパッケージのリスト"
+
+#: src/cli.vala
+msgid ""
+"list all packages that are members of the given groups, if no group is given"
+" list all groups"
+msgstr "指定されたグループのパッケージをすべてリストにする。グループが指定されていない場合はすべてのグループをリストにする"
+
+#: src/cli.vala
+msgid ""
+"list all packages available in the given repos, if no repo is given list all"
+" repos"
+msgstr "指定されたリポジトリで利用できるパッケージをすべてリストにする。リポジトリが指定されていない場合はすべてのリポジトリをリストにする"
+
+#: src/cli.vala
+msgid "list files owned by the given packages"
+msgstr "パッケージに属するファイルのリスト"
+
+#: src/cli.vala
+msgid "Clone or sync packages build files from AUR"
+msgstr "AUR からパッケージのビルドファイルをクローンまたは同期"
+
+#: src/cli.vala
+msgid "dir"
+msgstr "dir"
+
+#: src/cli.vala
+msgid ""
+"build directory, if no directory is given the one specified in pamac.conf "
+"file is used"
+msgstr "ビルドを行うディレクトリ、もしデジレクトリが指定されていない場合はpamac.confで指定されたものを使用"
+
+#: src/cli.vala
+msgid "also clone needed dependencies"
+msgstr "必要な依存パッケージもクローン"
+
+#: src/cli.vala
+msgid "do not print any output"
+msgstr "出力を表示しない"
+
+#: src/cli.vala
+msgid "overwrite existing files"
+msgstr "既存のファイルに上書き"
+
+#: src/cli.vala
+msgid ""
+"If no package name is given, use the PKGBUILD file in the current directory"
+msgstr "パッケージ名が指定されていない場合は、カレントディレクトリのPKGBUILDファイルを使用します"
+
+#: src/cli.vala
+msgid ""
+"The build directory will be the parent directory, --builddir option will be "
+"ignored"
+msgstr "ビルドディレクトリは1つ上のディレクトリとなり、--builddir オプションは無視されます"
+
+#: src/cli.vala
+msgid "and --no-clone option will be enforced"
+msgstr "--no-clone オプションを適用します"
+
+#: src/cli.vala
+msgid "keep built packages in cache after installation"
+msgstr "キャッシュ内のビルド済みパッケージをインストール後も保持する"
+
+#: src/cli.vala
+msgid "do not keep built packages in cache after installation"
+msgstr "インストール後はビルド済みパッケージをキャッシュに保持しない"
+
+#: src/cli.vala
+msgid "only print what would be done but do not run the transaction"
+msgstr "何が行われるかを表示するだけで、トランザクションは実行しない"
+
+#: src/cli.vala
+msgid "do not clone build files from AUR, only use local files"
+msgstr "AUR からビルドファイルをクローンせず、ローカルファイルのみを使用する"
+
+#: src/cli.vala
+msgid "bypass any and all confirmation messages"
+msgstr "すべての確認メッセージを無視する"
+
+#: src/cli.vala
+msgid "glob"
+msgstr "glob"
+
+#: src/cli.vala
+msgid ""
+"ignore a package upgrade, multiple packages can be specified by separating "
+"them with a comma"
+msgstr "アップグレードを無視するパッケージ。コンマで区切ることで複数のパッケージを指定できます"
+
+#: src/cli.vala
+msgid ""
+"overwrite conflicting files, multiple patterns can be specified by "
+"separating them with a comma"
+msgstr "コンフリクトするファイルを上書きする。カンマ区切りで複数のパターンを指定できる"
+
+#: src/cli.vala
+msgid "download all packages but do not install/upgrade anything"
+msgstr "すべてのパッケージをダウンロードするがインストール/アップグレードは行わない"
+
+#: src/cli.vala
+msgid "mark all packages installed as a dependency"
+msgstr "インストールされるすべてのパッケージを依存としてマーク"
+
+#: src/cli.vala
+msgid "mark all packages explicitly installed"
+msgstr "すべてのパッケージを明示的にインストールしたものとしてマーク"
+
+#: src/cli.vala
+msgid "check for updates"
+msgstr "アップデートを確認する"
+
+#: src/cli.vala
+msgid "do not check for updates"
+msgstr "アップデートを確認しない"
+
+#: src/cli.vala
+msgid "Reinstall packages"
+msgstr "パッケージの再インストール"
+
+#: src/cli.vala
+msgid "remove packages only if they are not required by any other packages"
+msgstr "他のパッケージから必要とされていないもののみ削除"
+
+#: src/cli.vala
+msgid ""
+"remove all target packages, as well as all packages that depend on one or "
+"more target packages"
+msgstr "すべてのターゲットパッケージと、ターゲットパッケージに依存するすべてのパッケージを削除する"
+
+#: src/cli.vala
+msgid ""
+"remove dependencies that are not required by other packages, if this option "
+"is used without package name remove all orphans"
+msgstr "他のパッケージから必要とされていないパッケージを削除する。パッケージ名を指定せずにこのオプションを使うと、孤立したパッケージをすべて削除する"
+
+#: src/cli.vala
+msgid "do not remove dependencies that are not required by other packages"
+msgstr "他のパッケージから必要とされない依存パッケージを削除しない"
+
+#: src/cli.vala
+msgid "ignore files backup"
+msgstr "ファイルのバックアップを無視"
+
+#: src/cli.vala
+msgid "Safely check for updates without modifiying the databases"
+msgstr "データベースを修正せずに安全にアップデートを確認する"
+
+#: src/cli.vala
+msgid "Exit code is 100 if updates are available"
+msgstr "アップデートがりようできるならば、終了コードは100です。"
+
+#: src/cli.vala
+msgid ""
+"build directory (use with --devel), if no directory is given the one "
+"specified in pamac.conf file is used"
+msgstr "ビルドディレクトリ (--devel と一緒に使う)。ディレクトリの指定がなければ pamac.conf ファイルで指定されたものが使われる"
+
+#: src/cli.vala
+msgid "also check updates in AUR"
+msgstr "AUR パッケージのアップデートも確認する"
+
+#: src/cli.vala
+msgid "do not check updates in AUR"
+msgstr "AUR のアップデートを確認しない"
+
+#: src/cli.vala
+msgid "only print one line per update"
+msgstr "1つのアップデートにつき1行だけ表示する"
+
+#: src/cli.vala
+msgid "also check development packages updates (use with --aur)"
+msgstr "開発用パッケージのアップデートも確認する (--aur と一緒に使う)"
+
+#: src/cli.vala
+msgid "do not check development packages updates"
+msgstr "開発用パッケージのアップデートを確認しない"
+
+#: src/cli.vala
+msgid "Upgrade your system"
+msgstr "システムのアップグレード"
+
+#: src/cli.vala
+msgid "force the refresh of the databases"
+msgstr "強制的にデータベースをアップデートする"
+
+#: src/cli.vala
+msgid "do not refresh the databases"
+msgstr "データベースをアップデートしない"
+
+#: src/cli.vala
+msgid "enable package downgrades"
+msgstr "パッケージのダウングレードを可能にする"
+
+#: src/cli.vala
+msgid "disable package downgrades"
+msgstr "パッケージのダウングレードを無効にする"
+
+#: src/cli.vala
+msgid "also upgrade packages installed from AUR"
+msgstr "AUR からインストールしたパッケージもアップグレードする"
+
+#: src/cli.vala
+msgid "do not upgrade packages installed from AUR"
+msgstr "AUR からインストールされたパッケージをアップグレードしない"
+
+#: src/cli.vala
+msgid "also upgrade development packages (use with --aur)"
+msgstr "開発用パッケージもアップグレードする (--aur と共に使用)"
+
+#: src/cli.vala
+msgid "do not upgrade development packages"
+msgstr "開発用パッケージをアップグレードしない"
+
+#: src/cli.vala
+msgid ""
+"build directory (use with --aur), if no directory is given the one specified"
+" in pamac.conf file is used"
+msgstr "ビルドディレクトリ (--aur とともに使う)。ディレクトリの指定がない場合は pamac.conf で指定されている場所を使う"
+
+#: src/cli.vala
+msgid "Clean packages cache or build files"
+msgstr "パッケージキャッシュまたはビルドファイルを空にする"
+
+#: src/cli.vala
+msgid "number"
+msgstr "数字"
+
+#: src/cli.vala
+msgid ""
+"specify how many versions of each package are kept in the cache directory"
+msgstr "キャッシュディレクトリに保持する各パッケージのバージョン数を指定する"
+
+#: src/cli.vala
+msgid "only target uninstalled packages"
+msgstr "アンインストール済みのパッケージのみを対象とする"
+
+#: src/cli.vala
+msgid ""
+"remove all build files, the build directory is the one specified in "
+"pamac.conf"
+msgstr "すべてのビルドファイルを削除します。ビルドディレクトリは pamac.conf で指定されているものです"
+
+#: src/cli.vala
+msgid "do not remove files, only find candidate packages"
+msgstr "ファイルを削除せず、候補パッケージの検索のみを行う"
+
+#: src/cli.vala
+msgid "also display all files names"
+msgstr "すべてのファイル名も表示する"
+
+#: src/cli.vala resources/manager_window.ui
+msgid "Name"
+msgstr "名前"
+
+#: src/cli.vala
+msgid "Version"
+msgstr "バージョン"
+
+#: src/cli.vala
+msgid "Description"
+msgstr "説明"
+
+#: src/cli.vala
+msgid "URL"
+msgstr "URL"
+
+#: src/cli.vala
+msgid "Installed Size"
+msgstr "インストールサイズ"
+
+#: src/cli.vala
+#, c-format
+msgid "No package owns %s"
+msgstr "%s を持つパッケージがありません"
+
+#: src/cli.vala
+#, c-format
+msgid "%s is owned by %s"
+msgstr "%s は  %s に属しています"
+
+#: src/cli.vala
+#, c-format
+msgid "%u ignored update"
+msgid_plural "%u ignored updates"
+msgstr[0] "%u 個のアップデートを無視する"
+
+#: src/cli.vala
+msgid "Remove only the versions of uninstalled packages"
+msgstr "アンインストール済みのパッケージのバージョンのみ削除する"
+
+#: src/cli.vala
+msgid "Number of versions of each package to keep in the cache"
+msgstr "キャッシュに保存するパッケージのバージョン数"
+
+#: src/cli.vala
+msgid "Clean cache"
+msgstr "キャッシュを削除"
+
+#: src/cli.vala
+msgid "Clean build files"
+msgstr "ビルドファイルを空にする"
+
+#: src/cli.vala
+#, c-format
+msgid "Add %s to install"
+msgstr "%s をインストールに追加する"
+
+#: src/cli.vala
+#, c-format
+msgid "%s is only available from AUR"
+msgstr "%s は AUR からのみ利用できます"
+
+#: src/cli.vala
+#, c-format
+msgid "There is %1$u member in group %2$s"
+msgid_plural "There are %1$u members in group %2$s"
+msgstr[0] "グループ %2$s には %1$u のメンバーがいます"
+
+#: src/cli.vala
+msgid "all"
+msgstr "すべて"
+
+#: src/cli.vala
+#, c-format
+msgid "Add %s to reinstall"
+msgstr "%s を再インストールに追加する"
+
+#: src/cli.vala
+#, c-format
+msgid "Install %1$s from %2$s"
+msgstr "%1$s を %2$s からインストール"
+
+#: src/snap_plugin.vala
+msgid "No"
+msgstr "いいえ"
+
+#: resources/choose_provider_dialog.ui
+msgid "Choose a Provider"
+msgstr "提供元を選択"
+
+#: resources/choose_provider_dialog.ui resources/choose_pkgs_dialog.ui
+msgid "Choose"
+msgstr " 選択"
+
+#: resources/progress_dialog.ui
+msgid "Progress"
+msgstr "経過"
+
+#: resources/history_dialog.ui
+msgid "Pamac History"
+msgstr "Pamacの履歴"
+
+#: resources/transaction_sum_dialog.ui
+msgid "Transaction Summary"
+msgstr "トランザクションの概要"
+
+#: resources/transaction_sum_dialog.ui resources/manager_window.ui
+msgid "_Apply"
+msgstr "適用 (_A)"
+
+#: resources/manager_window.ui
+msgid "Software Mode"
+msgstr "ソフトウェアモード"
+
+#: resources/manager_window.ui
+msgid "Refresh databases"
+msgstr "データベースをアップデート"
+
+#: resources/manager_window.ui
+msgid "View History"
+msgstr "履歴を見る"
+
+#: resources/manager_window.ui
+msgid "Preferences"
+msgstr "設定"
+
+#: resources/manager_window.ui
+msgid "About"
+msgstr "このソフトについて"
+
+#: resources/manager_window.ui
+msgid "Search"
+msgstr "検索"
+
+#: resources/manager_window.ui
+msgid "Remove all"
+msgstr "すべて削除"
+
+#: resources/manager_window.ui
+msgid "Install all"
+msgstr "すべてインストール"
+
+#: resources/manager_window.ui
+msgid "Ignore all"
+msgstr "すべて無視"
+
+#: resources/manager_window.ui
+msgid "Sort by"
+msgstr "ソート"
+
+#: resources/manager_window.ui
+msgid "Relevance"
+msgstr "関連度"
+
+#: resources/manager_window.ui
+msgid "Size"
+msgstr "サイズ"
+
+#: resources/manager_window.ui
+msgid "Date"
+msgstr "日付"
+
+#: resources/manager_window.ui
+msgid "Refresh"
+msgstr "アップデート"
+
+#: resources/manager_window.ui
+msgid "Categories"
+msgstr "カテゴリ"
+
+#: resources/manager_window.ui
+msgid "Browse"
+msgstr "ブラウズ"
+
+#: resources/manager_window.ui
+msgid "Launch"
+msgstr "実行"
+
+#: resources/manager_window.ui
+msgid "Remove"
+msgstr "削除"
+
+#: resources/manager_window.ui
+msgid "Reinstall"
+msgstr "再インストール"
+
+#: resources/manager_window.ui
+msgid "Build"
+msgstr "ビルド"
+
+#: resources/manager_window.ui
+msgid "Dependencies"
+msgstr "依存関係"
+
+#: resources/manager_window.ui
+msgid "Files"
+msgstr "ファイル"
+
+#: resources/manager_window.ui
+msgid "Reset build files"
+msgstr "ビルドファイルをリセット"
+
+#: resources/manager_window.ui
+msgid "Build files"
+msgstr "ビルドファイル"
+
+#: resources/preferences_dialog.ui
+msgid "General"
+msgstr "一般"
+
+#: resources/preferences_dialog.ui
+msgid "Check for updates"
+msgstr "アップデートがあるか確認する"
+
+#: resources/preferences_dialog.ui
+msgid "Updates check frequency"
+msgstr "アップデートを確認する頻度"
+
+#: resources/preferences_dialog.ui
+msgid "Automatically download updates"
+msgstr "アップデートを自動的にダウンロード"
+
+#: resources/preferences_dialog.ui
+msgid "Upgrade the system at shutdown"
+msgstr ""
+
+#: resources/preferences_dialog.ui
+msgid "Hide tray icon when no update"
+msgstr "更新がない場合はトレイアイコンを非表示にする"
+
+#: resources/preferences_dialog.ui
+msgid "Downloads"
+msgstr "ダウンロード"
+
+#: resources/preferences_dialog.ui
+msgid "Parallel downloads"
+msgstr "並行ダウンロード"
+
+#: resources/preferences_dialog.ui
+msgid "Use mirrors from"
+msgstr "次のミラーを使用する"
+
+#: resources/preferences_dialog.ui
+msgid "Refresh Mirrors"
+msgstr "ミラーをアップデート"
+
+#: resources/preferences_dialog.ui
+msgid "Cache"
+msgstr "キャッシュ"
+
+#: resources/preferences_dialog.ui
+msgid "Number of versions of each package to keep"
+msgstr "各パッケージの保持するバージョン数"
+
+#: resources/preferences_dialog.ui
+msgid "Remove only the uninstalled packages"
+msgstr "アンインストール済みのパッケージのみ削除する"
+
+#: resources/preferences_dialog.ui
+msgid "Clean"
+msgstr "削除"
+
+#: resources/preferences_dialog.ui
+msgid "Advanced"
+msgstr "高度な設定"
+
+#: resources/preferences_dialog.ui
+msgid ""
+"Misconfiguration of these options can lead to system breakage.\n"
+"Modify them only if you know what you are doing."
+msgstr "これらのオプションの設定を誤ると、システムが壊れる可能性があります。\n自分が何をしているのか理解している場合にのみ、それらを変更してください。"
+
+#: resources/preferences_dialog.ui
+msgid "Check available disk space"
+msgstr "利用可能なディスク容量を確認する"
+
+#: resources/preferences_dialog.ui
+msgid "Remove unrequired dependencies"
+msgstr "不要になった依存パッケージを削除する"
+
+#: resources/preferences_dialog.ui
+msgid "Do not check for updates when installing"
+msgstr "インストール時にアップデートを確認しない"
+
+#: resources/preferences_dialog.ui
+msgid "Enable downgrade"
+msgstr "ダウングレードを有効にする"
+
+#: resources/preferences_dialog.ui
+msgid "Ignored upgrades"
+msgstr "無視するアップグレード"
+
+#: resources/preferences_dialog.ui
+msgid "Third Party"
+msgstr "サードパーティー"
+
+#: resources/preferences_dialog.ui
+msgid ""
+"AUR is a community maintained repository so it presents potential risks and problems.\n"
+"All AUR users should be familiar with the build process."
+msgstr "AUR はコミュニティがメンテナンスしているリポジトリです。そのため潜在的なリスクや問題があります。\nAUR を使用する場合はビルドプロセスを熟知している必要があります。"
+
+#: resources/preferences_dialog.ui
+msgid "Enable AUR support"
+msgstr "AUR サポートを有効にする"
+
+#: resources/preferences_dialog.ui
+msgid "Keep built packages"
+msgstr "ビルド済みパッケージを保持する"
+
+#: resources/preferences_dialog.ui
+msgid "Check for development packages updates"
+msgstr "開発用パッケージのアップデートを確認する"
+
+#: resources/preferences_dialog.ui
+msgid "Build directory"
+msgstr "ビルドディレクトリ"
+
+#: resources/preferences_dialog.ui
+msgid "Flatpak packages are maintained by their publisher."
+msgstr "Flatpakパッケージはパブリッシャーによって管理されています。"
+
+#: resources/preferences_dialog.ui
+msgid "Enable Flatpak support"
+msgstr "Flatpakサポートを有効にする"
+
+#: resources/preferences_dialog.ui
+msgid "Snap packages are maintained by their publisher."
+msgstr "Snapパッケージは発行元によって管理されています。"
+
+#: resources/preferences_dialog.ui
+msgid "Enable Snap support"
+msgstr "Snapサポートを有効にする"

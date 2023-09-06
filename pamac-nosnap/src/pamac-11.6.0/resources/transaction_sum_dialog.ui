@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.0"/>
+  <template class="PamacTransactionSumDialog" parent="AdwMessageDialog">
+    <property name="heading" translatable="yes">Transaction Summary</property>
+    <property name="resizable">1</property>
+    <property name="extra_child">
+      <object class="GtkScrolledWindow" id="scrolledwindow">
+        <property name="hscrollbar-policy">never</property>
+        <property name="min_content_width">200</property>
+        <property name="min_content_height">400</property>
+        <child>
+          <object class="AdwClamp">
+            <property name="vexpand">1</property>
+            <property name="maximum_size">700</property>
+            <property name="margin_top">16</property>
+            <property name="margin_bottom">16</property>
+            <property name="margin_start">16</property>
+            <property name="margin_end">16</property>
+            <child>
+              <object class="GtkBox" id="box">
+                <property name="orientation">vertical</property>
+                <property name="spacing">12</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+    <property name="default-response">cancel</property>
+    <property name="close-response">cancel</property>
+    <responses>
+      <response id="cancel" translatable="yes">_Cancel</response>
+      <response id="apply" translatable="yes" appearance="suggested">_Apply</response>
+    </responses>
+  </template>
+</interface>
