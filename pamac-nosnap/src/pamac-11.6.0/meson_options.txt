@@ -1,1 +1,0 @@
-option('enable-fake-gnome-software', type : 'boolean', value : false, description : 'simulate gnome-software')
